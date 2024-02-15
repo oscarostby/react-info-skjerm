@@ -1,0 +1,80 @@
+.container1 {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff; /* Endret bakgrunnsfarge for å være hvit */
+  border-radius: 10px; /* Økt border-radius for en mykere kant */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Økt skygge for å legge til dybde */
+}
+
+.title1 {
+  font-size: 36px; /* Økt fontstørrelse for å være mer fremtredende */
+  margin-bottom: 30px; /* Økt avstand mellom tittelen og innholdet */
+  color: #333333; /* Endret farge for bedre kontrast */
+}
+
+.input1 {
+  width: calc(100% - 20px); /* Justert bredden for å passe containerens padding */
+  padding: 15px; /* Økt padding for bedre brukeropplevelse */
+  border: 2px solid #007bff; /* Endret grensefarge for en mer markant utseende */
+  border-radius: 6px; /* Mindre border-radius for en mer moderne følelse */
+  margin-bottom: 20px;
+  font-size: 16px; /* Justert fontstørrelse for bedre lesbarhet */
+}
+
+.upload-button1 {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 15px 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Lagt til overgang for jevnere effekt */
+}
+
+.upload-button1:hover {
+  background-color: #0056b3; /* Endret farge ved hover for å gi tilbakemelding */
+}
+
+.uploaded-image1 {
+  max-width: 100%;
+  height: auto; /* Endret høyde for å opprettholde proporsjoner */
+  margin-bottom: 20px;
+  border-radius: 6px; /* Lagt til border-radius for avrundede hjørner */
+  transition: transform 0.2s ease;
+}
+
+.delete-button1 {
+  background-color: #dc3545;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px; /* Justert fontstørrelse for å passe knappens størrelse */
+  position: absolute;
+  top: 10px; /* Justert avstand fra toppen for bedre plassering */
+  right: 10px; /* Justert avstand fra høyre for bedre plassering */
+  transition: opacity 0.3s ease; /* Lagt til overgang for jevnere effekt */
+  opacity: 0; /* Endret opacity for å være usynlig som standard */
+}
+
+.delete-button1:hover {
+  background-color: #c82333; /* Endret farge ved hover for å gi tilbakemelding */
+}
+
+.image-item1 {
+  position: relative;
+  margin-bottom: 30px; /* Økt avstand mellom bildene for bedre lesbarhet */
+}
+
+.image-item1:hover .delete-button1 {
+  opacity: 1; /* Endret opacity ved hover for å vise slett-knappen */
+}
+
+.image-grid1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Dynamisk justert kolonnebredde */
+  gap: 20px; /* Økt avstand mellom bilder for bedre utseende */
+}
