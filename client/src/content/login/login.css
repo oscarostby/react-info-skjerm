@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Mukta:wght@200;300;400;500;600;700;800&family=Nunito:wght@700&family=Outfit&family=Roboto:wght@500&family=Rubik&family=Workbench&display=swap');
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Mukta", sans-serif;
+  height: 100vh;
+  margin: 0;
+  color: white;
+  position: relative; /* Add this line */
+  font-weight: 500;
+}
+
+.login-box2 {
+  position: absolute; /* Change from relative to absolute */
+  border: 1px solid #e0e0e0;
+  padding: 100px; 
+  width: 300px;
+  height: 600px;
+  text-align: center;
+  top: 50%; /* Use top: 50% to position from the top */
+  left: 50%; /* Use left: 50% to position from the left */
+  transform: translate(-50%, -50%); /* Use translate to center */
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+  backdrop-filter: blur(10px); /* Juster blur-verdien etter behov */
+  border: none;
+
+  }
+ 
+
+.login-box2 h2 {
+  margin-bottom: 20px;
+}
+
+.login-box2 input {
+  width: 93%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.login-box2 button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  border: none;
+  margin-top: 30px;
+}
+
+.login-box2 button:hover {
+  background-color: #45a049;
+}
+
+.logotext2{
+  font-size: 30px;
+}
+
+.bg22 {
+  background: url(../../video/mnfj.webp) no-repeat fixed center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%; /* Adjust width to cover the entire viewport */
+  height: 100%; 
+}
