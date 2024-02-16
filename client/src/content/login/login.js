@@ -1,23 +1,19 @@
-// App.js
 import React from 'react';
 import AuthForm from '../../AuthForm';
 import './login.css'; // Import the styles
-import styled from 'styled-components';
 
-
-
-
-function App() {
-  
+const Login = () => {
   const handleSuccess = () => {
     console.log('Authentication successful!');
+    
+    // Set the "admin" cookie upon successful login
+    document.cookie = "admin=true;path=/";
+    
+    // Redirect to the admin page
     window.location.href = "/admin";
   };
 
-
-
   return (
-
     <div className="bg22">
       <div className="login-box2">
         <div className="logotext2">
@@ -26,9 +22,7 @@ function App() {
         <AuthForm endpoint="login" onSuccess={handleSuccess} />
       </div>
     </div>
-
   );
-  
-}
+};
 
-export default App;
+export default Login;
