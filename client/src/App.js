@@ -3,14 +3,15 @@ import { BrowserRouter, Route, Routes, Route as R } from 'react-router-dom'; // 
 import Home from './content/main/main'; // Assuming this is where your main content resides
 import Login from './content/login/login'; // Assuming this is where your main content resides
 import Admin from './content/admin/admin'; // Assuming this is where your main content resides
-
+import Skillissue from "./content/unauthorized/unauthorized";
 function App() {
   return (
     <BrowserRouter>
       <Routes> {/* Use Routes instead of Switch */}
-      <R path="/" element={<Home />} /> {/* Use Route with 'element' prop */}
+        <R path="/" element={<Home />} /> {/* Use Route with 'element' prop */}
         <R path="/login" element={<Login />} /> {/* Use Route with 'element' prop */}
         <R path="/Admin" element={<Admin />} /> {/* Use Route with 'element' prop */}
+        <R path="/unauthorized" element={<Skillissue />} /> {/* Use Route with 'element' prop */}
 
         {/* Add more routes as needed */}
       </Routes>
